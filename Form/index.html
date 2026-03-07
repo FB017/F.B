@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro do Usuário</title>
+        <style>
+            body {
+                background-color: #000; /* Fundo preto */
+                color: #fff; /* Texto branco */
+                font-family: Arial, sans-serif;
+            }
+            h1 {
+                color: #FFD700; /* Dourado */
+                text-align: center;
+                padding: 20px;
+            }
+            section {
+                width: 80%;
+                margin: 0 auto;
+                background-color: #333; /* Fundo escuro para o formulário */
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            h2 {
+                color: #FFD700; /* Dourado */
+
+            }
+            h3 {
+                color: #FFD700; /* Dourado */
+                
+
+        }
+            label {
+                display: block;
+                margin: 10px 0 5px;
+                font-size: 16px;
+            }
+            input[type="text"],
+            input[type="number"],
+            input[type="date"],
+            input[type="tel"],
+            input[type="email"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 2px solid #FFD700; /* Borda dourada */
+                background-color: #444; /* Fundo escuro */
+                color: #fff; /* Texto branco */
+                border-radius: 5px;
+                font-size: 14px;
+            }
+            input[type="text"]:focus,
+            input[type="number"]:focus,
+            input[type="date"]:focus,
+            input[type="tel"]:focus,
+            input[type="email"]:focus {
+                border-color: #FFD700; /* Destaque dourado ao focar */
+                outline: none;
+            }
+            input[type="submit"] {
+                background-color: #FFD700; /* Botão dourado */
+                color: #000;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 16px;
+                margin-top: 20px;
+                width: 100%;
+            }
+            input[type="submit"]:hover {
+                background-color: #e5b500; /* Efeito hover mais suave */
+            }
+
+            fieldset {
+                border: 2px solid #FFD700; /* Borda dourada */
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CADASTRO DO USUÁRIO</h1>
+    
+    <section>
+         <h3>INDIVIDUAL:</h3>
+         <input type="checkbox" name="individual" >
+
+         <h3>GRUPO TERAPÊUTICO:</h3>
+         <input type="checkbox" name="grupo">
+
+            <h2>1 - IDENTIFICAÇÃO:</h2>
+    
+            <form action="">
+                
+            <fieldset>
+
+            <legend>DADOS PESSOAIS</legend>
+
+            <label>Nome:</label>
+
+            <input type="text" placeholder="Digite seu nome completo">
+
+            <br><br>
+
+            <label>CPF:</label>
+
+            <input type="text" placeholder="Digite seu CPF">
+
+            <br><br>
+
+            <label>RG:</label>
+
+            <input type="text" placeholder="Digite seu RG">
+
+            <br><br>
+
+            <label>Data de nascimento:</label>
+
+            <input type="date">
+            <br><br>
+
+            <label>Idade:</label>
+
+            <input type="number" placeholder="Digite sua idade">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>ENDEREÇO</legend>
+
+            <label>Endereço:</label>
+
+            <input type="text" placeholder="Digite seu endereço">
+
+            <br><br>
+
+            <label>Nº:</label>
+
+            <input type="number" placeholder="Número da residência">
+
+            <br><br>
+
+            <label>Bairro:</label>
+
+            <input type="text" placeholder="Digite seu bairro">
+
+            <br><br>
+
+            <label>CEP:</label>
+
+            <input type="text" placeholder="Digite seu CEP">
+
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend>CONTATO</legend>
+
+            <label>Telefone:</label>
+
+            <input type="tel" placeholder="Digite seu telefone">
+
+            <br><br>
+
+            <label>Email:</label>
+
+            <input type="email" placeholder="Digite seu email">
+
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend>INFORMAÇÕES PESSOAIS</legend>
+
+            <label>Gênero:</label>
+
+            <input type="text" placeholder="Digite seu gênero">
+
+            <br><br>
+
+            <label>Escolaridade:</label>
+
+            <input type="text" placeholder="Digite seu nível de escolaridade">
+
+            <br><br>
+
+            <label>Profissão:</label>
+
+            <input type="text" placeholder="Digite sua profissão">
+
+            <br><br>
+
+            <label>Naturalidade:</label>
+            <input type="text" placeholder="Digite sua naturalidade">
+
+            <br><br>
+
+            <label>Estado civil:</label>
+            <input type="text" placeholder="Digite seu estado civil">
+
+            <br><br>
+
+            <label>Religião:</label>
+            <input type="text" placeholder="Digite sua religião">
+
+        </fieldset>
+
+
+                <h3>ALUNO UJ:</h3>
+                <label>
+                <input type="radio"name="ALUNO UJ:"value="SIM"> SIM
+                </label>
+                 
+                <input type="radio"name="ALUNO UJ:"value="NÃO"> NÃO
+                </label> 
+                <br><br><br>
+                
+        <fieldset>
+                 <br><br>
+                 
+                 <legend>DADOS DE ACESSO</legend>
+
+                 <label>Senha:</label>
+                 <input type="password" placeholder="Digite sua senha">
+
+                 <br><br>
+ 
+                 <label>Confirmar senha:</label>
+                 <input type="password" placeholder="Confirme sua senha">
+
+        </fieldset>
+                
+                
+                
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+
+    
+</body>
+</html>
