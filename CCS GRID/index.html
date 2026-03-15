@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TechSolutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+margin:0;
+background:#f4f6fb;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(90deg,#0f172a,#2563eb);
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* NAV BAR */
+
+nav{
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+padding:15px;
+margin:0;
+}
+
+nav ul li{
+margin:0 20px;
+}
+
+nav a{
+text-decoration:none;
+color:#0f172a;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+/* BANNER */
+
+.banner{
+background-image:url("IMG/banner.jpg");
+background-size:cover;
+background-position:center;
+height:420px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.banner-conteudo{
+background:rgba(15,23,42,0.7);
+padding:40px;
+border-radius:12px;
+max-width:600px;
+}
+
+.banner h1{
+font-size:48px;
+}
+
+.banner p{
+font-size:18px;
+margin:20px 0;
+}
+
+.botao{
+background:#2563eb;
+padding:12px 28px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+.botao:hover{
+background:#1d4ed8;
+transform:scale(1.05);
+}
+
+/* SECTIONS */
+
+section{
+padding:60px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+/* SERVIÇOS */
+
+.servicos-container{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:25px;
+width:250px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* SOBRE */
+
+.sobre{
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.sobre img{
+width:400px;
+border-radius:12px;
+}
+
+/* CONTATO */
+
+.contato-box{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+max-width:500px;
+margin:auto;
+text-align:center;
+}
+
+/* RODAPÉ */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>TechSolutions</h1>
+
+</header>
+
+<nav>
+<ul>
+
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#contato">Contato</a></li>
+<li><a href="#rodape">Rodapé</a></li>
+
+</ul>
+</nav>
+
+<!-- BANNER -->
+
+<section class="banner">
+
+<div class="banner-conteudo">
+
+<h1>Transformando tecnologia em soluções</h1>
+
+<p>
+A TechSolutions ajuda empresas a crescer com sistemas modernos,
+automação e soluções digitais.
+</p>
+
+<a href="#servicos" class="botao">Conheça nossos serviços</a>
+
+</div>
+
+</section>
+
+<!-- SERVIÇOS -->
+
+<section id="servicos">
+
+<h2>Nossos Serviços</h2>
+
+<div class="servicos-container">
+
+<div class="card">
+<h3>Desenvolvimento</h3>
+<p>Criação de softwares e sistemas personalizados.</p>
+</div>
+
+<div class="card">
+<h3>Consultoria</h3>
+<p>Transformação digital e otimização de processos.</p>
+</div>
+
+<div class="card">
+<h3>Suporte</h3>
+<p>Suporte técnico especializado para empresas.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SOBRE -->
+
+<section id="sobre">
+
+<h2>Sobre Nós</h2>
+
+<div class="sobre">
+
+<img src="IMG/startup.jpg" alt="Empresa">
+
+<p>
+A TechSolutions é uma startup focada em soluções tecnológicas para
+pequenas e médias empresas. Nosso objetivo é ajudar empresas a
+crescer através de tecnologia moderna e acessível.
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTATO -->
+
+<section id="contato">
+
+<h2>Contato</h2>
+
+<div class="contato-box">
+
+<p>Email: techsolutions@gmail.com</p>
+
+<p>Telefone: (71) 94002-8922</p>
+
+<p>Salvador - Bahia</p>
+
+</div>
+
+</section>
+
+<!-- RODAPÉ -->
+
+<footer id="rodape">
+
+<p>© 2026 TechSolutions - Todos os direitos reservados</p>
+
+</footer>
+
+</body>
+</html>
