@@ -1,0 +1,252 @@
+/* ===== CSS ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color:#C76C8A;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+
+.logo {
+    width: 220px;
+    height: auto;
+}
+
+/* ===== NAV ===== */
+nav {
+    background-color:#C76C8A;
+    padding: 15px 30px;
+}
+
+nav h2 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Efeito underline */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #E89AB0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f56991;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ===== TÍTULOS ===== */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: xx-large;
+}
+
+/* ===== SERVIÇOS ===== */
+.servico {
+    background-color: #F8C8DC;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== AGENDAMENTO ===== */
+.Agendamento {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.Agendamento h2 {
+    color: #E89AB0;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.Agendamento p {
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 15px;
+}
+
+/* ===== FORMULÁRIO ===== */
+.formulario {
+    max-width: 500px;
+    margin: auto;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.formulario label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #E89AB0;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: 1px solid #E89AB0;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    background-color: #E89AB0;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #f1648c;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer h2, 
+.footer h3 {
+    color: #F8C8DC;
+}
+
+.footer p, 
+.footer a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #E89AB0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+/* ===== MODO ESCURO ===== */
+body.dark {
+    background-color: #111;
+    color: #fff;
+}
+
+body.dark header {
+    background-color: #222;
+}
+
+body.dark .servico {
+    background-color: #1a1a1a;
+}
+header {
+    position: relative;
+}
+
+.tema-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #E89AB0;
+    color: #111;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.tema-btn:hover {
+    background-color: #f1648c;
+}

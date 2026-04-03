@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--Belle Hair Salon--</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header id="NAV">
+
+    <button onclick="trocarTema()" class="tema-btn">
+        Modo escuro
+    </button>
+
+    <div class="logo">
+        <img src="IMG/Belle Logo.png" alt="Logo Belle" class="logo">
+    </div>
+
+    <nav>
+        <h2>Serviços</h2>
+        <ul>
+            <li><a href="#Cabelo">Cabelo</a></li>
+            <li><a href="#Unha">Unha</a></li>
+            <li><a href="#Estetica Facial">Estética Facial</a></li>
+            <li><a href="#CorpoeBemestar">Corpo e Bem estar</a></li>
+            <li><a href="#Maquiagem">Maquiagem</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="Serviços" id="Serviços">
+
+    <div class="servico" id="Cabelo">
+        <h2>Cabelo</h2>
+        <p>Transforme seu visual com nossos serviços de cabelo...</p>
+        <img src="IMG/Cabelo.png" alt="Serviço de cabelo profissional">
+    </div>
+
+    <div class="servico" id="Unha">
+        <h2>Unha</h2>
+        <p>Cuide das suas unhas com nossos serviços...</p>
+        <img src="IMG/Unha.png" alt="Serviço de manicure e pedicure">
+    </div>
+
+    <div class="servico" id="Estetica Facial">
+        <h2>Estética Facial</h2>
+        <p>Revitalize sua pele com nossos tratamentos...</p>
+        <img src="IMG/Estetica Facial.png" alt="Tratamento de estética facial">
+    </div>
+
+    <div class="servico" id="CorpoeBemestar">
+        <h2>Corpo e Bem estar</h2>
+        <p>Relaxe e revitalize seu corpo...</p>
+        <img src="IMG/Corpo e Bem estar.png" alt="Massagem e bem-estar corporal">
+    </div>
+
+    <div class="servico" id="Maquiagem">
+        <h2>Maquiagem</h2>
+        <p>Realce sua beleza natural...</p>
+        <img src="IMG/Maquiagem.png" alt="Serviço de maquiagem profissional">
+    </div>
+
+</section>
+
+<section class="Agendamento" id="Agendamento">
+
+    <h2>Agendamento</h2>
+    <p>Agende seu horário conosco...</p>  
+
+    <div class="formulario">
+        <form action="processar_agendamento.php" method="POST">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required minlength="3" placeholder="Digite seu nome completo">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu Email">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Ex: 71999998888" minlength="10" maxlength="11" pattern="[0-9]{10,11}" required>
+
+            <label for="servico">Serviço Desejado:</label>
+            <select id="servico" name="servico" required>
+                <option value="">Selecione um serviço</option>
+                <option value="Cabelo">Cabelo</option>
+                <option value="Unha">Unha</option>
+                <option value="Estetica Facial">Estética Facial</option>
+                <option value="CorpoeBemestar">Corpo e Bem estar</option>
+                <option value="Maquiagem">Maquiagem</option>
+            </select>
+
+            <label for="data">Data do Agendamento:</label>
+            <input type="date" id="data" name="data" required min="2026-01-01">
+
+            <button type="submit">Agendar</button>
+
+        </form>
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer" id="contato">
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+            <h2>Belle Hair Salon</h2>
+            <p>Realçando sua beleza todos os dias ✨</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Links rápidos</h3>
+            <ul>
+                <li><a href="#NAV">Início</a></li>
+                <li><a href="#Serviços">Serviços</a></li>
+                <li><a href="#Agendamento">Agendamento</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contato">
+            <h3>Contato</h3>
+            <p>📍 Shopping da Bahia - Av. Tancredo Neves, Terceiro Piso - Caminho das Árvores,  Salvador - BA, 41820-908</p>
+            <p>📞 (71) 98234-4578</p>
+            <p>📧 bellehsalon@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Belle Hair Salon - Todos os direitos reservados</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
